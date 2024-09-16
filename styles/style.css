@@ -42,7 +42,7 @@
   }
   50% {
     opacity: 30%;
-    background-color: #229799;
+    background-color: #8E8B82;
   }
   100% {
     opacity: 25%;
@@ -91,6 +91,9 @@ body {
   font-weight: 200;
   text-shadow: 1px 1px 2px #000;
 }
+.text-box__par-mmd--red-span {
+  color: #FF5656;
+}
 .text-box__hi-mmd {
   color: #fff;
   font-family: "SUSE", sans-serif;
@@ -98,6 +101,20 @@ body {
   line-height: 1.25;
   text-align: center;
   animation: Blink 1s ease-in 1s;
+}
+
+.section-about .heading-secondary {
+  font-family: "SUSE", sans-serif;
+  font-size: 3rem;
+  display: inline-block;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #8E8B82, #424242);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.u-center-text {
+  text-align: center;
 }
 
 .btn:link, .btn:visited {
@@ -113,11 +130,11 @@ body {
   position: relative;
 }
 .btn--color {
-  background-color: #71caf3;
+  background-color: #fff;
   color: #424242;
 }
 .btn--color::after {
-  background-color: #71caf3;
+  background-color: #FFF200;
 }
 .btn:hover {
   transform: translateY(-2.25px);
@@ -217,6 +234,11 @@ body {
 }
 .row .col-3-of-4 {
   width: calc(3 * (100% - 2.5rem * 3) / 4 + 2.5rem * 2);
+}
+
+.section-about {
+  background-color: #f5f5f5;
+  padding: 10rem 0 37.5rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */
