@@ -11,7 +11,7 @@
     }
     @include Clearfix;
     [class^=col-]{
-        background-color: red;
+        background-color: orangered;
         float: left;
         &:not(:last-child){
             margin-right: $gutter-horizental;

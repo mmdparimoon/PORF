@@ -194,7 +194,7 @@ body {
   clear: both;
 }
 .row [class^=col-] {
-  background-color: red;
+  background-color: orangered;
   float: left;
 }
 .row [class^=col-]:not(:last-child) {
