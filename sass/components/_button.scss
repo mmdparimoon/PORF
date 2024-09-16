@@ -1,0 +1,55 @@
+
+.btn{
+    &:link,
+    &:visited{
+        text-transform:capitalize;
+        text-decoration: none;
+        font-size: 2vW;
+        margin-top: 25.5px;
+        padding:0.5rem 2rem ;
+        border-radius: 25px;
+        display: inline-block;
+        font-weight: 700;
+        font-family: "Quicksand", sans-serif;
+        position: relative;
+        
+    }
+    &--color{
+        background-color: $color-btn;
+        color: $color-quaternary;
+       &::after{
+        background-color: $color-btn;
+       }
+    }
+    &:hover{
+        transform: translateY(-2.25px);
+        box-shadow: 2.5px 10px 12px rgba( #ffffff, 0.25);
+        &::after{
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+            animation: GoShrink .25s ease-in 0.2s 3;
+        }
+    }
+    &:active{
+        transform: translateY(-1.25px);
+        box-shadow: 2.5px 10px 12px rgba( #000000, 0.25);
+    }
+    &::after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        height: 100%;
+        width:100%;
+        display: inline-block;
+        z-index: -1;
+        border-radius: 100px;
+        transition: all;
+
+    }
+    &--animetion{
+        animation: MoveInBottom 1.75s ease-out 0.75s  ;
+        animation-fill-mode: backwards;
+    }
+    
+}

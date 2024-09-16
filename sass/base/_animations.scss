@@ -1,0 +1,55 @@
+
+@keyframes AppearLogo {
+    0%{
+        opacity: 5%;
+    }
+    100%{
+        opacity: 100%;
+    }
+    
+}
+@keyframes DisAppearLogo {
+    0%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 2.5%;
+    }
+    
+}
+
+@keyframes Blink {
+    0%{
+        opacity: 95%;
+    }
+    50%{
+        opacity: 50%;
+    }
+    100%{
+        opacity: 100%;
+    }
+    
+}
+
+@keyframes MoveInBottom {
+    0%{
+        opacity: 0;
+        
+        transform: translateY(15px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes GoShrink {
+    0%{opacity: 10%;
+        background-color:$color-quaternary;}
+    50%{
+        opacity: 30%;
+        background-color:$color-tertiary;
+    }    
+    100%{opacity: 25%;
+        background-color:$color-quaternary;}
+    
+}

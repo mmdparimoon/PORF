@@ -1,0 +1,12 @@
+{
+  "name": "porfolito",
+  "version": "1.0.0",
+  "description": "landing page for porfilito",
+  "main": "index.js",
+  "devDependencies": {
+    "sass": "^1.78.0"
+  },
+  "scripts": {"compile:sass": "sass sass/main.scss styles/style.css -w"},
+  "author": "parimoon",
+  "license": "ISC"
+}
