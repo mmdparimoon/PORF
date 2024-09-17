@@ -180,7 +180,7 @@ body {
   color: #424242;
 }
 .btn--color::after {
-  background-color: #FFF200;
+  background-color: rgba(255, 242, 0, 0.3764705882);
 }
 .btn:hover {
   transform: translateY(-2.25px);
