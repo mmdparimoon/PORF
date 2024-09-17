@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Error: Undefined variable.
  *   ,
  * 6 |         box-shadow: 0 1.5rem 4rem rgba($color-black, 0.5);
@@ -5,6 +6,74 @@
  *   '
  *   sass\components\_composition.scss 6:40  @import
  *   sass\main.scss 11:8                     root stylesheet */
+=======
+@keyframes AppearLogo {
+  0% {
+    opacity: 5%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes DisAppearLogo {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 2.5%;
+  }
+}
+@keyframes MoveUp {
+  0% {
+    transform: translateY(2rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes Blink {
+  0% {
+    opacity: 95%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes MoveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes GoShrink {
+  0% {
+    opacity: 10%;
+    background-color: #424242;
+  }
+  50% {
+    opacity: 30%;
+    background-color: #8E8B82;
+  }
+  100% {
+    opacity: 25%;
+    background-color: #424242;
+  }
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+>>>>>>> grid-test
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -16,3 +85,224 @@ body::before {
   border-bottom: 2px solid black;
   content: "Error: Undefined variable.\a   \2577 \a 6 \2502          box-shadow: 0 1.5rem 4rem rgba($color-black, 0.5);\d\a   \2502                                         ^^^^^^^^^^^^\a   \2575 \a   sass\\components\\_composition.scss 6:40  @import\a   sass\\main.scss 11:8                     root stylesheet";
 }
+<<<<<<< HEAD
+=======
+.text-box__par-mmd--red-span {
+  color: #FF5656;
+}
+.text-box__hi-mmd {
+  color: #fff;
+  font-family: "SUSE", sans-serif;
+  font-size: 4vw;
+  line-height: 1.25;
+  text-align: center;
+  animation: Blink 1s ease-in 1s;
+}
+
+.section-about .heading-secondary {
+  font-family: "SUSE", sans-serif;
+  font-size: 3.5rem;
+  display: inline-block;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #8E8B82, #424242);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.tert-heading {
+  font-size: 1.85rem;
+}
+.tert-heading:not(:first-child) {
+  margin-top: 3rem;
+}
+
+.par-about {
+  font-size: 1.55rem;
+}
+.par-about:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-mb-l {
+  margin-bottom: 4rem;
+}
+
+.u-mb-m {
+  margin-bottom: 2rem;
+}
+
+.u-mb-s {
+  margin-bottom: 1rem;
+}
+
+.u-mt-l {
+  margin-top: 4rem;
+}
+
+.u-mt-m {
+  margin-top: 2rem;
+}
+
+.u-mt-s {
+  margin-top: 1rem;
+}
+
+.btn:link, .btn:visited {
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 2vW;
+  margin-top: 25.5px;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  display: inline-block;
+  font-weight: 700;
+  font-family: "Quicksand", sans-serif;
+  position: relative;
+}
+.btn--color {
+  background-color: #fff;
+  color: #424242;
+}
+.btn--color::after {
+  background-color: rgba(255, 242, 0, 0.3764705882);
+}
+.btn:hover {
+  transform: translateY(-2.25px);
+  box-shadow: 2.5px 10px 12px rgba(255, 255, 255, 0.25);
+}
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+  animation: GoShrink 0.25s ease-in 0.2s 3;
+}
+.btn:active {
+  transform: translateY(-1.25px);
+  box-shadow: 2.5px 10px 12px rgba(0, 0, 0, 0.25);
+}
+.btn::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  z-index: -1;
+  border-radius: 100px;
+  transition: all;
+}
+.btn--animetion {
+  animation: MoveInBottom 1.75s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+
+.composition {
+  position: relative;
+}
+.composition__img {
+  width: 48.5%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.5);
+  position: absolute;
+  transition: all 0.2s;
+  outline-offset: 1.2rem;
+  z-index: 3;
+  animation: MoveUp 2s;
+}
+.composition__img--p2 {
+  left: 45%;
+  top: 2.5rem;
+}
+.composition__img--p1 {
+  right: 35%;
+  top: 10rem;
+}
+.composition__img:hover {
+  border-radius: 0;
+  outline: 1rem solid rgba(99, 98, 98, 0.137254902);
+  transform: scale(1.1) translateY(-0.5rem);
+  box-shadow: 0 2rem 4rem rgba(142, 139, 130, 0.6);
+  z-index: 6;
+}
+.composition:hover .composition__img:not(:hover) {
+  transform: scale(0.95);
+}
+
+.header {
+  height: 95vh;
+  background-image: url(../images/backg.jpg);
+  background-size: cover;
+  background-position: top;
+}
+.header .logo-box {
+  position: absolute;
+  top: 22.5px;
+  left: 22.5px;
+  display: block;
+}
+.header .logo-box__logo-pm {
+  width: 5%;
+  animation: AppearLogo 2.5s;
+}
+.header .logo-box__logo-oip {
+  opacity: 45%;
+  width: 5%;
+  z-index: 6;
+  animation: DisAppearLogo 0.5s 3;
+}
+.header .logo-box__logo-oip:hover {
+  opacity: 100%;
+  width: 5%;
+  z-index: 6;
+}
+
+.row {
+  max-width: 115rem;
+  margin: 0 auto;
+}
+.row:not(:last-child) {
+  margin-bottom: 5rem;
+}
+.row:first-child {
+  margin-top: 1rem;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row [class^=col-] {
+  float: left;
+}
+.row [class^=col-]:not(:last-child) {
+  margin-right: 2.5rem;
+}
+.row .col-1-of-2 {
+  width: calc((100% - 2.5rem) / 2);
+}
+.row .col-1-of-3 {
+  width: calc((100% - 2.5rem * 2) / 3);
+}
+.row .col-2-of-3 {
+  width: calc(2 * (100% - 2.5rem * 2) / 3 + 2.5rem);
+}
+.row .col-1-of-4 {
+  width: calc((100% - 2.5rem * 3) / 4);
+}
+.row .col-2-of-4 {
+  width: calc(2 * (100% - 2.5rem * 3) / 4 + 2.5rem);
+}
+.row .col-3-of-4 {
+  width: calc(3 * (100% - 2.5rem * 3) / 4 + 2.5rem * 2);
+}
+
+.section-about {
+  background-color: #f5f5f5;
+  padding: 10rem 0 37.5rem 0;
+}
+
+/*# sourceMappingURL=style.css.map */
+>>>>>>> grid-test
