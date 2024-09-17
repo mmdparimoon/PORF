@@ -105,7 +105,7 @@ body {
 
 .section-about .heading-secondary {
   font-family: "SUSE", sans-serif;
-  font-size: 3rem;
+  font-size: 3.5rem;
   display: inline-block;
   font-weight: 600;
   background-image: linear-gradient(to left, #8E8B82, #424242);
@@ -113,8 +113,46 @@ body {
   color: transparent;
 }
 
+.tert-heading {
+  font-size: 1.85rem;
+}
+.tert-heading:not(:first-child) {
+  margin-top: 3rem;
+}
+
+.par-about {
+  font-size: 1.55rem;
+}
+.par-about:not(:last-child) {
+  margin-bottom: 5px;
+}
+
 .u-center-text {
   text-align: center;
+}
+
+.u-mb-l {
+  margin-bottom: 4rem;
+}
+
+.u-mb-m {
+  margin-bottom: 2rem;
+}
+
+.u-mb-s {
+  margin-bottom: 1rem;
+}
+
+.u-mt-l {
+  margin-top: 4rem;
+}
+
+.u-mt-m {
+  margin-top: 2rem;
+}
+
+.u-mt-s {
+  margin-top: 1rem;
 }
 
 .btn:link, .btn:visited {
@@ -195,9 +233,8 @@ body {
 }
 
 .row {
-  max-width: 125rem;
+  max-width: 115rem;
   margin: 0 auto;
-  background-color: #fff;
 }
 .row:not(:last-child) {
   margin-bottom: 5rem;
@@ -211,7 +248,6 @@ body {
   clear: both;
 }
 .row [class^=col-] {
-  background-color: orangered;
   float: left;
 }
 .row [class^=col-]:not(:last-child) {

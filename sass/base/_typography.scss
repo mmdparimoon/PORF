@@ -39,7 +39,7 @@ body{
 .section-about{
     .heading-secondary{
         font-family: "SUSE", sans-serif;
-        font-size: 3rem;
+        font-size: 3.5rem;
         display: inline-block;
         font-weight: 600;
         background-image: linear-gradient(to left, $color-tertiary, $color-quaternary);
@@ -47,4 +47,19 @@ body{
         color: transparent;
     }
 
+}
+
+.tert-heading{
+    font-size: 1.85rem;
+    &:not(:first-child){
+        margin-top: 3rem;
+    }
+    
+}
+
+.par-about{
+    font-size: 1.55rem;
+    &:not(:last-child){
+        margin-bottom: 5px;
+    }
 }
