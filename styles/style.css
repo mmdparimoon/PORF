@@ -14,6 +14,14 @@
     opacity: 2.5%;
   }
 }
+@keyframes MoveUp {
+  0% {
+    transform: translateY(2rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 @keyframes Blink {
   0% {
     opacity: 95%;
@@ -202,6 +210,37 @@ body {
 .btn--animetion {
   animation: MoveInBottom 1.75s ease-out 0.75s;
   animation-fill-mode: backwards;
+}
+
+.composition {
+  position: relative;
+}
+.composition__img {
+  width: 48.5%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.5);
+  position: absolute;
+  transition: all 0.2s;
+  outline-offset: 1.2rem;
+  z-index: 3;
+  animation: MoveUp 2s;
+}
+.composition__img--p2 {
+  left: 45%;
+  top: 2.5rem;
+}
+.composition__img--p1 {
+  right: 35%;
+  top: 10rem;
+}
+.composition__img:hover {
+  border-radius: 0;
+  outline: 1rem solid rgba(99, 98, 98, 0.137254902);
+  transform: scale(1.1) translateY(-0.5rem);
+  box-shadow: 0 2rem 4rem rgba(142, 139, 130, 0.6);
+  z-index: 6;
+}
+.composition:hover .composition__img:not(:hover) {
+  transform: scale(0.95);
 }
 
 .header {
