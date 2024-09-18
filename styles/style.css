@@ -111,7 +111,27 @@ body {
   animation: Blink 1s ease-in 1s;
 }
 
+.section-about__outline {
+  margin: -1.5rem 6.5vh;
+  outline: 0.25rem solid #424242;
+  padding: 1.5rem 1rem;
+}
 .section-about .heading-secondary {
+  font-family: "SUSE", sans-serif;
+  font-size: 3.5rem;
+  display: inline-block;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #8E8B82, #424242);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.section-skills__outline {
+  margin: -1.5rem 6.5vh;
+  outline: 0.25rem solid #424242;
+  padding: 1.5rem 1rem;
+}
+.section-skills .heading-secondary {
   font-family: "SUSE", sans-serif;
   font-size: 3.5rem;
   display: inline-block;
